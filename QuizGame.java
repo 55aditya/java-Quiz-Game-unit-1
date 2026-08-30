@@ -4,23 +4,18 @@ public class QuizGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // MEMBER 1 - USER REGISTRATION
+        // MEMBER 1 - ADITYA (USER REGISTRATION)
         System.out.println("===== JAVA QUIZ GAME =====");
         System.out.print("Enter your name: ");
         String name = sc.nextLine();
         System.out.println("Welcome " + name + "!\n");
 
-        // MEMBER 2 - QUESTION AND ANSWER SET
+        // MEMBER 2 - OM (QUESTION AND ANSWER SET)
         String q1 = "What is the full form of JVM?";
-        String a1 = "Java Virtual Machine";
-
         String q2 = "Which keyword is used to create a class?";
-        String a2 = "class";
-
         String q3 = "Which data type stores whole numbers?";
-        String a3 = "int";
 
-        // MEMBER 3 - OPTION LOGIC
+        // MEMBER 3 - SAURABH (OPTION LOGIC)
         int score = 0;
 
         // Question 1
@@ -29,7 +24,6 @@ public class QuizGame {
         System.out.println("2. Java Variable Machine");
         System.out.println("3. Java Visual Machine");
         System.out.println("4. Java Verified Machine");
-
         System.out.print("Enter option: ");
         int option = sc.nextInt();
 
@@ -46,7 +40,6 @@ public class QuizGame {
         System.out.println("2. class");
         System.out.println("3. object");
         System.out.println("4. create");
-
         System.out.print("Enter option: ");
         option = sc.nextInt();
 
@@ -63,7 +56,6 @@ public class QuizGame {
         System.out.println("2. char");
         System.out.println("3. int");
         System.out.println("4. boolean");
-
         System.out.print("Enter option: ");
         option = sc.nextInt();
 
@@ -74,7 +66,20 @@ public class QuizGame {
             System.out.println("Wrong!");
         }
 
-       
+        // ==========================================
+        // MEMBER 4 - KUNAL (FINAL RESULT & GRADING)
+        // ==========================================
+        System.out.println("\n===== RESULT =====");
+        System.out.println("Name: " + name);
+        System.out.println("Score: " + score + " / 3");
+
+        if (score == 3) {
+            System.out.println("Excellent!");
+        } else if (score >= 2) {
+            System.out.println("Good!");
+        } else {
+            System.out.println("Keep Practicing!");
+        }
 
         sc.close();
     }
